@@ -12,14 +12,14 @@ body {
 }
 
 .qr-card {
-    width: 300px;
+    width: 320px;
     height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: hsl(0, 0%, 100%);
-    padding: 10px 10px 30px 10px;
+    padding: 15px 15px 40px 15px;
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ body {
 .subtitle {
     font-weight: 400;
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
     color: hsl(220, 15%, 55%);
 }
 
