@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat';
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    display: flex;
+}
+
+@media (min-width: 700px) {
+    .product-card {
+        width: 600px;
+        flex-direction: row;
+    }
+    .product-image {
+        width: 300px;
+        height: 100%;
+    }
+    .product-info {
+        padding: 35px;
+        gap: 20px;
+    }
+    .description {
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .product-card {
+        width: 340px;
+        flex-direction: column;
+    }
+    .product-image {
+        width: 100%;
+    }
+    .product-info {
+        padding: 22px;
+        gap: 12px;
+    }
+    .description {
+        line-height: 1.3rem;
+    }
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.kicker {
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.title {
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.title, .new-price {
+    font-family: 'Fraunces';
+}
+
+.prices {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.new-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    padding-left: 25px;
+}
+
+.cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cart-button:is(:hover, :focus) {
+    background-color: hsl(158, 36%, 20%);
+  }
+
+.cart-button > img {
+    padding-right: 10px;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+
+
