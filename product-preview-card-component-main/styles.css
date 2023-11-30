@@ -32,8 +32,9 @@ body {
         height: 100%;
     }
     .product-info {
-        padding: 35px;
-        gap: 20px;
+        justify-content: center;
+        padding: 25px 30px 25px 30px;
+        gap: 24px;
     }
     .description {
         line-height: 1.5rem;
@@ -68,6 +69,7 @@ p {
 }
 
 .kicker {
+    font-size: 12px;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
 }
@@ -83,7 +85,6 @@ p {
 }
 
 .prices {
-    padding: 10px 0;
     display: flex;
     align-items: center;
 }
