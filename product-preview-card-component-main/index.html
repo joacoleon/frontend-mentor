@@ -10,14 +10,19 @@
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
-  <main class="product-card rounded">
-    <img src="images/image-product-mobile.jpg" alt="perfume image mobile" class="product-image">
-    <div class="product-info">
-      <p class="kicker">Perfume</p>
-      <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
-      <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
-      <p class="prices"><span class="new-price">$149.99</span><span class="old-price">$169.99</span></p>
-      <button type="button" class="cart-button rounded"><img src="images/icon-cart.svg"></img>Add to Cart</button>
+  <main>
+    <div class="product-card rounded">
+      <picture>
+        <source srcset="images/image-product-desktop.jpg" media="(min-width: 700px)" class="product-image">
+        <img src="images/image-product-mobile.jpg" alt="perfume image" class="product-image">
+      </picture>
+      <div class="product-info">
+        <p class="kicker">Perfume</p>
+        <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <p class="prices"><span class="new-price">$149.99</span><span class="old-price">$169.99</span></p>
+        <button type="button" class="cart-button rounded"><img src="images/icon-cart.svg"></img>Add to Cart</button>
+      </div>
     </div>
   </main>
 </body>
